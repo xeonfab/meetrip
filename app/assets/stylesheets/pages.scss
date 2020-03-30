@@ -1,19 +1,23 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.background {
-  background-color: #3F95E8;
+
+.h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-
-.container {
-  display: flex;
+.background {
+  background: linear-gradient(271.89deg, #296EC2 -12.76%, #3F95E8 99.52%);
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
 }
+
+.screen {
+  display: flex;
+}
+
 
 .phone {
   width: 329.73px;

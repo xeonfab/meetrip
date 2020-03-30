@@ -1,33 +1,38 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetrip - Des voyageurs proches de vous</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="background">
-    <div class="header">
-      <div id="logo">
-        <%= image_tag "meetrip.png" %>
-      </div>
-      <div>
-        <%= image_tag "facebook.png" %>
-        <%= image_tag "twitter.png" %>
-      </div>
-    </div>
 
     <div class="container">
-      <div class="row">
-        <div class="baseline col-xl-8"
-          <h1>Des voyageurs proches de vous</h1>
-          <h2>Avec Meetrip, rencontrez des gens localement avec qui vous partagez les mêmes centres d'intérêts. Que vous soyez seul, avec des amis ou en couple.</h2>
-          <div class="invitation">
-            <p>Add your adress email</p>
-          </div>
+        <div class="header row">
+            <div class="col-sm-10">
+              <%= image_tag "meetrip.png", width: '170' %>
+            </div>
+            <div class="col-sm-2">
+              <%= image_tag "facebook.png", width: '39' %>
+              <%= image_tag "twitter.png", width: '39' %>
+            </div>
         </div>
 
-        <div class="phone col-xl-4">
-          <%= image_tag "phone-banner.png", width: '329.73' %>
+        <div class="row screen">
+          <div class="baseline col-sm-8">
+            <h1>Des voyageurs proches de vous</h1>
+            <h2>Avec Meetrip, rencontrez des gens localement avec qui vous partagez les mêmes centres d'intérêts. Que vous soyez seul, avec des amis ou en couple.</h2>
+            <div class="invitation">
+              <p>Add your adress email</p>
+            </div>
+          </div>
+          <div class="phone col-sm-4">
+            <%= image_tag "phone-banner.png", width: '420' %>
+          </div>
         </div>
-      </div>
     </div>
 
   </div>
+
 </body>
