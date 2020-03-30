@@ -1,0 +1,20 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.background {
+  background-color: #3F95E8;
+}
+
+
+.container {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone {
+  width: 329.73px;
+}
