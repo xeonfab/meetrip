@@ -7,32 +7,46 @@
 </head>
 <body>
   <div class="background">
-
     <div class="container">
-        <div class="header row">
-            <div class="col-sm-10">
+        <div class="flex row header">
+            <div class="col-lg-10">
               <%= image_tag "meetrip.png", width: '170' %>
             </div>
-            <div class="col-sm-2">
+            <div class="col-lg-2">
               <%= image_tag "facebook.png", width: '39' %>
               <%= image_tag "twitter.png", width: '39' %>
             </div>
         </div>
 
-        <div class="row screen">
-          <div class="baseline col-sm-8">
-            <h1>Des voyageurs proches de vous</h1>
-            <h2>Avec Meetrip, rencontrez des gens localement avec qui vous partagez les mêmes centres d'intérêts. Que vous soyez seul, avec des amis ou en couple.</h2>
-            <div class="invitation">
-              <p>Add your adress email</p>
-            </div>
+        <div class="row flex">
+          <div class="baseline col-lg-7">
+              <p class="banner-title">Des voyageurs proches de vous</p>
+              <p class="banner-description">Avec Meetrip, rencontrez des gens localement avec qui vous partagez les mêmes centres d'intérêts. Que vous soyez seul, avec des amis ou en couple.</p>
+              <button class="btn-main" type="button">Get an early invitation</button>
           </div>
-          <div class="phone col-sm-4">
+          <div class="phone col-lg-5">
             <%= image_tag "phone-banner.png", width: '420' %>
           </div>
         </div>
     </div>
 
-  </div>
+    <div class="container ">
+      <div class="row bloc-align">
+        <p class="banner-title">Marre de ces moments de solitude ou rencontres éphémères ?</p>
+        <p class="banner-title">Faites de vraies rencontres en voyage !</p>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+          <div class="baseline col-lg-7">
+              <p class="banner-title">En voyage seul, en couple ou entre amis</p>
+              <p class="banner-description">Que tu sois digital nomade, expatrié, local, backpacker... , rencontrez des personnes passionnantes et proches de vous. Vous voyagez en couple ou entre amis ? Vous pouvez créer un seul compte afin d’échanger avec l’ensemble des voyageurs.</p>
+          </div>
+          <div class="phone col-lg-5">
+            <%= image_tag "cards.png", width: '520' %>
+          </div>
+      </div>
+    </div>
+  </div>
 </body>
