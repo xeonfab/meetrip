@@ -32,7 +32,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'pg', '~> 0.21'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -52,7 +51,7 @@ group :development do
 end
 
 group :production do
-    gem 'pg'
+    gem 'pg', '~> 0.21'
 end
 
 group :test do
