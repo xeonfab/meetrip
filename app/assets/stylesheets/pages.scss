@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .background {
-  background: linear-gradient(271.89deg, #296EC2 -12.76%, #3F95E8 99.52%);
+  background: linear-gradient(46.42deg, #296EC2 64.14%, #3F95E8 79.03%);
   margin: 0 auto;
+}
+
+.header-social {
+  text-align: right;
 }
 
 .flex {
@@ -17,11 +21,25 @@
 
 .phone {
   width: 329.73px;
+  text-align: right;
+}
+
+.shadow-phone {
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.45);
 }
 
 .baseline {
   margin-top: 100px;
   width: 300px;
+}
+
+.banner-titleh1 {
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 67px;
 }
 
 .banner-title {
@@ -31,19 +49,24 @@
   font-weight: 500;
   font-size: 45px;
   line-height: 67px;
+  .blue {
+    color: 296EC2;
+  }
 }
 
 .banner-description {
   color: white;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 25px;
   line-height: 37px;
 }
 
+
+
 .btn-main {
-  padding: 15px 20px;
+  padding: 19px 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.19);
   margin-top: 35px;
   background: #FE346E;
@@ -54,15 +77,74 @@
   width: 315px;
   color: white;
   margin-top: 30px;
+  border: 0px;
+}
 
+.join {
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 67px;
+  margin-left: 30px;
 }
 
 .bloc-align {
-  align-items: center;
+  text-align: center;
   padding: 0 50px;
+  justify-content: center;
+
 }
 
 .space {
   margin-bottom: 100px;
+}
 
+.card-adventure {
+  background-color: white;
+  max-width: 700px;
+  min-height: 230px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px;
+  border-radius: 10px;
+  z-index: 1px;
+  position: absolute;
+  right: 300px;
+  top: 465px;
+}
+
+
+.image-adventure {
+  position: relative;
+}
+
+.medium-title {
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+  p {
+    margin-bottom: Opx;
+  }
+}
+
+.light-title {
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: Opx;
+   p {
+    margin-bottom: Opx;
+  }
 }
