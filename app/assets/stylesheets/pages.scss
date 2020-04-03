@@ -5,7 +5,12 @@
 .background {
   background: linear-gradient(46.42deg, #296EC2 64.14%, #3F95E8 79.03%);
   margin: 0 auto;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .header-social {
@@ -22,9 +27,6 @@
   justify-content: center;
 }
 
-.header {
-  padding-top: 20px;
-}
 
 .phone {
   width: 329.73px;
