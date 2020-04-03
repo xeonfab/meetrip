@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
-  <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:url"           content="https://meetrip.herokuapp.com/" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Your Website Title" />
-  <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+  <meta property="og:title"         content="Meetrip" />
+  <meta property="og:description"   content="Meetrip - Des voyageurs proches de vous" />
+  <meta property="og:image"         content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fcmtravel.com%2Ffr-fr&psig=AOvVaw3xMSJj3rjq65gQmjYqGfe7&ust=1586001270167000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDXgaWZzOgCFQAAAAAdAAAAABAD" />
 </head>
 <body>
   <div class="background">
@@ -18,10 +18,10 @@
             <div class="col-lg-10">
               <%= image_tag "meetrip.png", width: '170' %>
             </div>
-            <div class="col-lg-2 header-social">
+            <!-- <div class="col-lg-2 header-social">
               <%= image_tag "facebook.png", width: '39' %>
               <%= image_tag "twitter.png", width: '39' %>
-            </div>
+            </div> -->
         </div>
 
         <div class="row flex">
@@ -105,19 +105,27 @@
           <div>
             <%= image_tag "facebook.png", width: '50' %>
             <%= image_tag "twitter.png", width: '50' %>
-            <div id="shareBtn" class="btn btn-success clearfix">Share Dialog</div>
-            <script>
-        document.getElementById('shareBtn').onclick = function() {
-        FB.ui({
-          display: 'popup',
-          method: 'share',
-          href: 'https://developers.facebook.com/docs/',
-        }, function(response){});
-      }
-      </script>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your share button code -->
+  <div class="fb-share-button"
+    data-href="https://meetrip.herokuapp.com/"
+    data-layout="button">
+  </div>
 
           </div>
       </div>
     </div>
   </div>
 </body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0&appId=206250832878808&autoLogAppEvents=1"></script>
