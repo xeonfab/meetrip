@@ -8,8 +8,7 @@
 }
 
 .header {
-  margin-left: 15px;
-  margin-bottom: 50px;
+  padding: 20px 30px 0px 30px;
 }
 
 .flex {
@@ -115,7 +114,7 @@
 }
 
 .card-adventure {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.9);
   max-width: 750px;
   min-height: 200px;
   position: relative;
@@ -169,6 +168,16 @@
 
 }
 
+.image {
+  display: block;
+}
+
+.image.mobile {
+  display: none;
+}
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .baseline {
@@ -176,7 +185,50 @@
 }
 
 .banner-titleh1 {
-  font-size: 50px;
-  line-height: 57px;
+  font-size: 48px;
+  line-height: 50px;
 }
+
+.banner-description {
+  font-size: 20px;
+  line-height: 28px;
 }
+
+.banner-title {
+  font-size: 40px;
+  line-height: 50px;
+  .blue {
+    color: 296EC2;
+  }
+}
+
+.medium-title {
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+  p {
+    margin-bottom: Opx;
+  }
+}
+
+.light-title {
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: Opx;
+   p {
+    margin-bottom: Opx;
+  }
+}
+
+.image {
+  display: none;
+}
+
+.image.mobile {
+  display: block;
+}
+
+
+}
+
