@@ -213,11 +213,11 @@
 }
 
 .image {
-  display: none;
+  background-image:url(aventure.jpg);
 }
 
 .image.mobile {
-  display: block;
+  background-image:url(aventure-mobile.jpg);
 }
 
 .display-mobile {
