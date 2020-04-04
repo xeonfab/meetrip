@@ -28,7 +28,7 @@
 
 
 .phone {
-  width: 329.73px;
+  width: 380px;
   text-align: right;
 }
 
@@ -72,22 +72,6 @@
 }
 
 
-
-.btn-main {
-  padding: 19px 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.19);
-  margin-top: 35px;
-  background: #FE346E;
-  border-radius: 10px;
-  font-family: Montserrat;
-  font-size: 18px;
-  text-align: center;
-  width: 315px;
-  color: white;
-  margin-top: 30px;
-  border: 0px;
-}
-
 .join {
   color: white;
   font-family: Montserrat;
@@ -96,6 +80,10 @@
   font-size: 17px;
   line-height: 67px;
   margin-left: 30px;
+}
+
+.display-join {
+  display: flex;
 }
 
 .bloc-align {
@@ -228,8 +216,18 @@
   display: none;
 }
 
-.image.mobile {
+.display-mobile {
   display: block;
+}
+
+.display-join {
+  display: block;
+  text-align: center;
+}
+
+.phone {
+  width: 300px;
+  text-align: center;
 }
 
 
