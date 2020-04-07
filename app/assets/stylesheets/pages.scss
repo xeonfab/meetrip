@@ -157,7 +157,7 @@
 }
 
 .image_desktop {
-  display: block;
+  display: inline-block;
 }
 
 .image_mobile {
@@ -175,6 +175,7 @@
 .view_mobile {
   display: none;
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -231,7 +232,7 @@
 }
 
 .image_mobile {
-  display: block;
+  display: inline-block;
 }
 
 .display-mobile {
@@ -249,9 +250,10 @@
 }
 
 .card-adventure {
-  right: 55px;
-  top: 420px;
-  max-width: 390px;
+  right: 34px;
+  justify-content: center;
+  top: 300px;
+  max-width: 310px;
   min-height: 140px;
 }
 
@@ -260,7 +262,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 30px;
   text-align: center;
 }
@@ -280,5 +282,7 @@
 .center {
   text-align: center;
 }
+
+
 }
 
