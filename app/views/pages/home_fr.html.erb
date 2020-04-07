@@ -1,1 +1,139 @@
-<h1>hey</h1>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162904102-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162904102-1');
+</script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meetrip - Des voyageurs passionnés proches de vous</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+  <meta property="og:url"           content="https://meetrip.herokuapp.com/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Meetrip" />
+  <meta property="og:description"   content="Meetrip - Des voyageurs passionnés proches de vous" />
+  <meta property="og:image"         content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fcmtravel.com%2Ffr-fr&psig=AOvVaw3xMSJj3rjq65gQmjYqGfe7&ust=1586001270167000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDXgaWZzOgCFQAAAAAdAAAAABAD" />
+</head>
+<body>
+  <div class="background">
+    <div class="container">
+        <div class="flex-header row header">
+              <%= image_tag "meetrip.png", width: '170' %>
+              <%= link_to root_path  do%><%= image_tag "british-flag.png", width: '34', height: '23' %><% end %>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row flex space">
+          <div class="baseline col-lg-7">
+              <p class="banner-titleh1">Des voyageurs passionnants<br> proches de vous</p>
+              <p class="banner-description">With Meetrip, meet people locally with whom you share the same interests. Whether you are solo, with friends or as a couple, wonderful encounters take place in travel !</p>
+            <div style="margin-top: 50px;" class="display-join">
+              <a class="typeform-share button" href="https://fabienriou92.typeform.com/to/SJlN37" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#FE346E;color:white;cursor:pointer;font-family:Montserrat,Arial,sans-serif;font-size:17px;line-height:42.5px;text-align:center;margin:0;height:42.5px;padding:10px 30px;box-shadow:0px 4px 10px rgba(0, 0, 0, 0.19);border-radius:7px;width:315px;height:65px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:medium;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-footer=true target="_blank">Get an early access </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+              <p class="join">Join the community for free</p>
+            </div>
+          </div>
+          <div class="phone col-lg-5">
+            <%= image_tag "phone-banner.png", :class => "phone" %>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row space">
+          <div class="baseline col-lg-6">
+              <p class="banner-title">Solo traveller, as a couple or with friends</p>
+              <p class="banner-description">Whether you are digital nomad, expat, local, badckpacker..., meet passionate people close to you. You travel as a couple or with friends ? You will able to create one single account in order to converse with all travellers.</p>
+          </div>
+          <div class="phone col-lg-6">
+            <%= image_tag "cards-1024.png", width: '520', srcset: [["cards-1024.png", "1024w"], ["cards-600.png", "700w"]], sizes: "100vw" %>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row space">
+        <div class="phone col-lg-6">
+            <%= image_tag "centres-interets.png", width: '520' %>
+        </div>
+        <div class="baseline col-lg-6">
+              <p class="banner-title">Travellers with similar interests</p>
+              <p class="banner-description">Meetrip suggest that define what you love in few keywords. In addition to talking about your last trips or those planned, you converse with people having the same interests than you.</p>
+              <a class="typeform-share button" href="https://fabienriou92.typeform.com/to/SJlN37" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#FE346E;color:white;cursor:pointer;font-family:Montserrat,Arial,sans-serif;font-size:17px;line-height:42.5px;text-align:center;margin:0;height:42.5px;padding:10px 30px;box-shadow:0px 4px 10px rgba(0, 0, 0, 0.19);border-radius:7px;width:315px;height:65px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:medium;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-footer=true target="_blank">Get an early access</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row space">
+        <div class="baseline col-lg-6">
+            <p class="banner-title">Meeting people in roadtrip</p>
+            <p class="banner-description">By adding your next destination, walk easily the path with a lot of others travellers having the same itinerary than you.</p>
+        </div>
+        <div class="phone col-lg-6">
+          <%= image_tag "roadtrip.png", width: '700', :alt => 'roadtrip', srcset: [["roadtrip.png", "1024w"], ["roadtrip-mobile.png", "700w"]] %>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row bloc-align space">
+        <p class="medium-title">Join the community for free</p>
+        <p class="light-title">Build easily strong and authentic relationships in travel</p>
+      </div>
+    </div>
+    <img src="aventure-desktop.jpg" alt="">
+    <div class="container">
+      <div class="row space">
+        <div class="image-adventure">
+          <%= image_tag "aventure-desktop.png", width: '1140' %>
+
+          <div class="card-adventure" style="display: block">
+            <div style="margin-bottom: 30px;">
+              <p class="blue-title">Ready for the adventure ?</p>
+            </div>
+            <div style="text-align: center;">
+              <a class="typeform-share button" href="https://fabienriou92.typeform.com/to/SJlN37" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#FE346E;color:white;cursor:pointer;font-family:Montserrat,Arial,sans-serif;font-size:17px;line-height:42.5px;text-align:center;margin:0;height:42.5px;padding:10px 30px;box-shadow:0px 4px 10px rgba(0, 0, 0, 0.19);border-radius:7px;width:315px;height:65px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:medium;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-footer=true target="_blank">Get an early access</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="row" style="display: block; text-align: center; padding-bottom: 200px;">
+          <p class="banner-title" style="font-size: 37px;">Share the app</p>
+          <div>
+
+          <!-- Load Facebook SDK for JavaScript -->
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+
+          <!-- Your share button code -->
+          <div class="fb-share-button"
+            data-href="https://meetrip.herokuapp.com/"
+            data-layout="button">
+          </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0&appId=206250832878808&autoLogAppEvents=1"></script>
+

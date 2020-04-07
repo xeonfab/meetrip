@@ -1,4 +1,14 @@
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162904102-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162904102-1');
+</script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meetrip - Passionate travellers close to you</title>
@@ -16,7 +26,7 @@
     <div class="container">
         <div class="flex-header row header">
               <%= image_tag "meetrip.png", width: '170' %>
-              <%= image_tag "british-flag.png", width: '34', height: '23' %>
+              <%= link_to fr_path  do%><%= image_tag "france-flag.png", width: '34', height: '23' %><% end %>
 
         </div>
     </div>
@@ -43,7 +53,8 @@
               <p class="banner-description">Whether you are digital nomad, expat, local, badckpacker..., meet passionate people close to you. You travel as a couple or with friends ? You will able to create one single account in order to converse with all travellers.</p>
           </div>
           <div class="phone col-lg-6">
-            <%= image_tag "cards-1024.png", width: '520', srcset: [["cards-1024.png", "1024w"], ["cards-600.png", "400w"]], sizes: "100vw" %>
+            <%= image_tag "cards-1024.png", width: '520', :class => "image_desktop" %>
+            <%= image_tag "cards-600.png", width: '100%', :class => "image_mobile" %>
           </div>
       </div>
     </div>
@@ -51,7 +62,8 @@
     <div class="container">
       <div class="row space">
         <div class="phone col-lg-6">
-            <%= image_tag "centres-interets.png", width: '520' %>
+            <%= image_tag "interets-1024.png", width: '520', :class => "image_desktop" %>
+            <%= image_tag "interets-600.png", width: '100%', :class => "image_mobile" %>
         </div>
         <div class="baseline col-lg-6">
               <p class="banner-title">Travellers with similar interests</p>
@@ -68,8 +80,8 @@
             <p class="banner-description">By adding your next destination, walk easily the path with a lot of others travellers having the same itinerary than you.</p>
         </div>
         <div class="phone col-lg-6">
-          <%= image_tag "roadtrip.png", width: '720', :alt => 'roadtrip', srcset: [["roadtrip.png", "1024w"], ["roadtrip-mobile.png", "400w"]], sizes: "100vw" %>
-
+            <%= image_tag "roadtrip-1024.png", width: '520', :class => "image_desktop" %>
+            <%= image_tag "roadtrip-600.png", width: '100%', :class => "image_mobile" %>
         </div>
       </div>
     </div>
@@ -84,7 +96,8 @@
     <div class="container">
       <div class="row space">
         <div class="image-adventure">
-          <%= image_tag "aventure-desktop.png", width: '1140' %>
+          <%= image_tag "aventure-1024.png", width: '520', :class => "image_desktop" %>
+            <%= image_tag "aventure-600.png", width: '100%', :class => "image_mobile" %>
 
           <div class="card-adventure" style="display: block">
             <div style="margin-bottom: 30px;">

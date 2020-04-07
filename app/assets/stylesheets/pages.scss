@@ -156,11 +156,11 @@
 
 }
 
-.image {
+.image_desktop {
   display: block;
 }
 
-.image.mobile {
+.image_mobile {
   display: none;
 }
 
@@ -214,12 +214,12 @@
   }
 }
 
-.image {
-  background-image:url(aventure.jpg);
+.image_desktop {
+  display: none;
 }
 
-.image.mobile {
-  background-image:url(aventure-mobile.jpg);
+.image_mobile {
+  display: block;
 }
 
 .display-mobile {
